@@ -11,6 +11,22 @@ All dependencies installed from NuGet for easy management.
 
 # A bit about the project
 
+The aim of this project is to implement automation testing on the Trello website 
+
+with the objective of validating two key scenarios: 
+
+inviting a member to a board via email and deleting a board
+
+The repository include functions that can simulate user actions on the Trello website 
+
+and verify that the expected results are achieved.
+
+In addition to testing the scenarios on the frontend of the Trello website, 
+
+this project will also involve testing the same scenarios on the backend using the Trello API.
+
+In other words, both scenarios were tested from the UI and from the API directly
+
 The project contains 
 
 	- BackendAPI folder: where we can find the class returning the responses of the APIs
@@ -95,6 +111,23 @@ To modify the logging configuration, you can modify the 'log4net.config' file di
 
 For example, you can change the logging level, the output location, or the formatting of the log messages.
 
+# Installation
+1.	Clone the repository: git clone https://github.com/nour-hajallie/TrelloTestAutomation.git
 
+2.	Open the solution file TrelloTestAutomation.sln in Visual Studio.
+
+3.	Restore the NuGet packages by selecting the solution node in Solution Explorer and 
+
+choosing "Restore NuGet Packages" from the right-click context menu.
+
+4. Build the solution by selecting "Build Solution" from the "Build" menu or 
+
+pressing Ctrl+Shift+B.
+
+5. Make sure that the Pre-Requisite are followed
+
+6. Open the Test Explorer by selecting "Test Explorer" from the "Test" menu.
+
+7. Run the tests by selecting "Run All" in the Test Explorer or by pressing Ctrl+R, A.
 
 
