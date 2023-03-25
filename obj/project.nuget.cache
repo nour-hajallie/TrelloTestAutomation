@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VzbczbCVCIPyZnUiozKiJT44hTADESZ7tVmxBzjQbX/RXnx/Qwg9SF18CaoAMT0ZK6cxte4RoO4o7Y4o8+DAQw==",
+  "dgSpecHash": "QXfmPE4AOwYnJilhbdOA5LIYAfIlm2FGQkhNzIHekNEoXvJ5eQBfGyoT7YW/dfRijRpPrUPRH84v8qhSl08u4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SwordLeb\\OneDrive - SWORD GROUP\\Desktop\\Assignment\\TrelloTestAutomation\\TrelloTestAutomation.csproj",
+  "projectFilePath": "C:\\Users\\SwordLeb\\OneDrive - SWORD GROUP\\Desktop\\Assignment\\cloud\\TrelloTestAutomation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SwordLeb\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\SwordLeb\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",

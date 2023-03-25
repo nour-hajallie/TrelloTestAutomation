@@ -1726,11 +1726,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SwordLeb\\OneDrive - SWORD GROUP\\Desktop\\Assignment\\TrelloTestAutomation\\TrelloTestAutomation.csproj",
+      "projectUniqueName": "C:\\Users\\SwordLeb\\OneDrive - SWORD GROUP\\Desktop\\Assignment\\cloud\\TrelloTestAutomation.csproj",
       "projectName": "TrelloTestAutomation",
-      "projectPath": "C:\\Users\\SwordLeb\\OneDrive - SWORD GROUP\\Desktop\\Assignment\\TrelloTestAutomation\\TrelloTestAutomation.csproj",
+      "projectPath": "C:\\Users\\SwordLeb\\OneDrive - SWORD GROUP\\Desktop\\Assignment\\cloud\\TrelloTestAutomation.csproj",
       "packagesPath": "C:\\Users\\SwordLeb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SwordLeb\\OneDrive - SWORD GROUP\\Desktop\\Assignment\\TrelloTestAutomation\\obj\\",
+      "outputPath": "C:\\Users\\SwordLeb\\OneDrive - SWORD GROUP\\Desktop\\Assignment\\cloud\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

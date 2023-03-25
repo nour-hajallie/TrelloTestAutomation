@@ -1,0 +1,52 @@
+2023-03-25 13:15:52,475 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-03-25 13:15:56,769 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-03-25 13:16:02,269 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-03-25 13:16:11,786 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-03-25 13:16:17,350 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-03-25 13:16:22,433 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-03-25 13:16:27,976 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-03-25 13:16:33,001 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-03-25 13:16:38,071 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-03-25 13:16:43,492 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-03-25 13:16:52,043 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if the notification is displayed
+2023-03-25 13:16:57,088 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Notification Content is displayed: Added you to the board TestBoard a few seconds ago
+2023-03-25 13:16:58,819 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing function TestUIDeleteBoard Started
+2023-03-25 13:17:01,818 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-03-25 13:17:07,150 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-03-25 13:17:16,263 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-03-25 13:17:21,547 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Click on 3 dots to close the board
+2023-03-25 13:17:37,080 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if board is closed successfully
+2023-03-25 13:17:42,116 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Board is closed successfully
+2023-03-25 13:17:42,116 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Delete the board
+2023-03-25 13:17:47,995 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Board Deleted successfully
+2023-03-25 13:17:54,960 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing API function TestAPIInviteMemberToBoardViaEmail Started
+2023-03-25 13:17:55,954 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Call Get Boards by member api to store the board id
+2023-03-25 13:17:55,964 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id} trello request to Delete a Board.
+2023-03-25 13:17:58,556 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-03-25 13:17:58,556 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-03-25 13:17:58,854 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Board Id found: 641ecefddea4cd7989158a84
+2023-03-25 13:17:58,854 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Calling api function to Get Memberships of a Board before any invitation is done
+2023-03-25 13:17:58,855 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id}/memberships trello request to Get Memberships of a Board.
+2023-03-25 13:17:58,855 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Call Execute function with the request defined
+2023-03-25 13:17:59,092 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-03-25 13:17:59,092 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-03-25 13:17:59,093 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Calling api function to Invite a Member to a Board via their email address
+2023-03-25 13:17:59,095 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running PUT /1/boards/{id}/members trello request to Invite a Member to a Board via their email address.
+2023-03-25 13:17:59,096 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Call Execute function with the request defined
+2023-03-25 13:17:59,906 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-03-25 13:17:59,906 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-03-25 13:17:59,932 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Calling api function to Get Memberships of a Board after invitation was done
+2023-03-25 13:17:59,933 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id}/memberships trello request to Get Memberships of a Board.
+2023-03-25 13:17:59,933 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Call Execute function with the request defined
+2023-03-25 13:18:00,144 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-03-25 13:18:00,144 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-03-25 13:18:00,159 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - New member 6419ba316e4f3309bf6116bc (normal) has been added to the board
+2023-03-25 13:18:04,782 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing API function TestAPIDeleteBoard Started
+2023-03-25 13:18:04,798 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Call Get Boards by member api to store the board id
+2023-03-25 13:18:04,798 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id} trello request to Delete a Board.
+2023-03-25 13:18:05,697 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-03-25 13:18:05,697 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-03-25 13:18:05,704 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Board Id found: 641ecefddea4cd7989158a84
+2023-03-25 13:18:05,704 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Calling api function to delete a board
+2023-03-25 13:18:05,705 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id} trello request to Delete a Board.
+2023-03-25 13:18:07,258 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Board with name TestBoard2 and id 641ecefddea4cd7989158a84 is deleted
