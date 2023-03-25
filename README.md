@@ -11,7 +11,7 @@ All dependencies installed from NuGet for easy management.
 
 # A bit about the project
 
-The project is divided into: 
+The project contains 
 
 	- BackendAPI folder: where we can find the class returning the responses of the APIs
 
@@ -23,7 +23,9 @@ The project is divided into:
 	
 	in the front end functions 
 
-	- Test functions are created in UnitTest1.cs class, 4 functions are created ( 2 for the frontend and 2 for the backend):
+	- App.config file storing the sensitive information
+
+	- UnitTest1.cs: class where the Test functions are created, 2 functions for the frontend feature and 2 for the backend feature
 
 ## Front End functions: 
 
@@ -62,6 +64,7 @@ To have before running the functions
 4- Create a board from user 1 account and add the name board to the key boardNameAPI for the API functions
 
 App.config should be filled in this way: 
+
 	<appSettings>
 		<add key="emailUser1" value="nhajallie@hotmail.com" />
 		<add key="passwordUser1" value="NourH@j@llie123" />
