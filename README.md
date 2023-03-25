@@ -11,39 +11,29 @@ All dependencies installed from NuGet for easy management.
 
 # A bit about the project
 
-The Test functions are in UnitTest1.cs and in order, 4 functions are created:
+The project is divided into: 
+
+	- BackendAPI folder: where we can find the class returning the responses of the APIs
+
+	- Config folder: where we can find the environment config class and the log4net config file
+
+	- DataEntities folder: where we can find the classes to map the response of the api used in the backend functions
+	
+	- PageObjects folder: where we can find the classes containing the selectors and function related to each page used in the front end functions 
+
+The Test functions are created in UnitTest1.cs class, 4 functions are created ( 2 for the frontend and 2 for the backend):
 
 ## Front End functions: 
 
-These functions are created using Selenium, the folder PageObjects contains the selectors and functions related to each page
+These functions are created using Selenium.
 
 ### TestUIInviteMemberToBoardViaEmail: 
 
 This function will be able to check if the invitation of a member to a board via an Email is working correctly
 
-Steps:
-
-	- User 1 authenticate
-
-	- Search for the board created
-
-	- Invite member via email
-
-	- User 2 authenticate
-
-	- Notification of invitation is checked
-
 ### TestUIDeleteBoard: 
 
 This function will be able to check the action delete board
-
-Steps:
-
-	- User 1 authenticate
-
-	- Search for the board created
-
-	- Delete the board
 
 ## BackEnd Function: 
 
