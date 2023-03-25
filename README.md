@@ -13,24 +13,49 @@ All dependencies installed from NuGet for easy management.
 
 The Test functions are in UnitTest1.cs and in order, 4 functions are created:
 
-Front End functions: are created using Selenium, the folder PageObjects contains the selectors and functions related to each page
-1- TestUIInviteMemberToBoardViaEmail: this function will be able to check if the invitation of a member to a board via an Email is working correctly
-Steps:
-	1- User 1 authenticate
-	2- Search for the board created
-	3- Invite member via email
-	4- User 2 authenticate
-	5- Notification of invitation is checked
+## Front End functions: 
 
-2- TestUIDeleteBoard: this function will be able to check the action delete board
-Steps:
-	1- User 1 authenticate
-	2- Search for the board created
-	3- Delete the board
+These functions are created using Selenium, the folder PageObjects contains the selectors and functions related to each page
 
-BackEnd Function: RestSharp and NUnit are used, the folder DataEntities was created to be aple to map the response of the api into each class
-1- TestAPIInviteMemberToBoardViaEmail: this function will be able to check if the api related to invite member via email is working fine
-2- TestAPIDeleteBoard: this function will be able to check if the api related to delete a board is working fine
+### TestUIInviteMemberToBoardViaEmail: 
+
+This function will be able to check if the invitation of a member to a board via an Email is working correctly
+
+Steps:
+
+	- User 1 authenticate
+
+	- Search for the board created
+
+	- Invite member via email
+
+	- User 2 authenticate
+
+	- Notification of invitation is checked
+
+### TestUIDeleteBoard: 
+
+This function will be able to check the action delete board
+
+Steps:
+
+	- User 1 authenticate
+
+	- Search for the board created
+
+	- Delete the board
+
+## BackEnd Function: 
+
+These functions are created using RestSharp and NUnit are used, the folder DataEntities was created to be aple to map the response of the api into each class
+
+### TestAPIInviteMemberToBoardViaEmail: 
+
+This function will be able to check if the api related to invite member via email is working fine
+
+### TestAPIDeleteBoard: 
+
+This function will be able to check if the api related to delete a board is working fine
 
 
 # Pre-Requisite
