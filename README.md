@@ -23,7 +23,7 @@ The project is divided into:
 	
 	in the front end functions 
 
-The Test functions are created in UnitTest1.cs class, 4 functions are created ( 2 for the frontend and 2 for the backend):
+	- Test functions are created in UnitTest1.cs class, 4 functions are created ( 2 for the frontend and 2 for the backend):
 
 ## Front End functions: 
 
