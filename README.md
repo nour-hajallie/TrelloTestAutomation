@@ -49,7 +49,7 @@ This function will be able to check the action delete board
 
 ## BackEnd Function: 
 
-These functions are created using RestSharp and NUnit are used, the folder DataEntities was created to be aple to map the response of the api into each class
+These functions are created using RestSharp and NUnit.
 
 ### TestAPIInviteMemberToBoardViaEmail: 
 
