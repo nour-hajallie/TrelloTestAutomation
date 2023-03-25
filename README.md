@@ -19,7 +19,9 @@ The project is divided into:
 
 	- DataEntities folder: where we can find the classes to map the response of the api used in the backend functions
 	
-	- PageObjects folder: where we can find the classes containing the selectors and function related to each page used in the front end functions 
+	- PageObjects folder: where we can find the classes containing the selectors and function related to each page used 
+	
+	in the front end functions 
 
 The Test functions are created in UnitTest1.cs class, 4 functions are created ( 2 for the frontend and 2 for the backend):
 
