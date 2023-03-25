@@ -9,6 +9,30 @@ Once cloned, and after setting the credentials in the App.config file, the solut
 
 All dependencies installed from NuGet for easy management.
 
+# A bit about the project
+
+The Test functions are in UnitTest1.cs and in order, 4 functions are created:
+
+Front End functions: are created using Selenium, the folder PageObjects contains the selectors and functions related to each page
+1- TestUIInviteMemberToBoardViaEmail: this function will be able to check if the invitation of a member to a board via an Email is working correctly
+Steps:
+	1- User 1 authenticate
+	2- Search for the board created
+	3- Invite member via email
+	4- User 2 authenticate
+	5- Notification of invitation is checked
+
+2- TestUIDeleteBoard: this function will be able to check the action delete board
+Steps:
+	1- User 1 authenticate
+	2- Search for the board created
+	3- Delete the board
+
+BackEnd Function: RestSharp and NUnit are used, the folder DataEntities was created to be aple to map the response of the api into each class
+1- TestAPIInviteMemberToBoardViaEmail: this function will be able to check if the api related to invite member via email is working fine
+2- TestAPIDeleteBoard: this function will be able to check if the api related to delete a board is working fine
+
+
 # Pre-Requisite
 To have before running the functions
 
