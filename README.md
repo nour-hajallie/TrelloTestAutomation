@@ -65,7 +65,7 @@ To have before running the functions
 
 1- Create two test user account and add them in the App.config file
 
-2- Add the apikey and token in the App.config
+2- Add the apikey and token of Trello in the App.config 
 
 3- Create a board from user 1 account and add the name board to the key boardNameUI for the UI functions
 
