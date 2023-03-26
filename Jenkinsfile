@@ -19,6 +19,16 @@ pipeline {
                 sh "ls -la"
             }
         }
+        stage('Build') {
+    steps {
+        bat "msbuild TrelloTestAutomation.csproj /t:Build /p:Configuration=Release"
+    }
+}
+stage('Test') {
+      steps {
+        bat 'vstest.console.exe TrelloTestAutomation.dll'
+      }
+    }
         stage('Run My Test') {
             steps {
                 sh 'dotnet test'
