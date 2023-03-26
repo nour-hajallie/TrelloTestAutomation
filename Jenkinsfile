@@ -13,13 +13,9 @@ pipeline {
                      sh "ls -la"
                  }
                  }
-                 stage('Build') {
-                 steps {
-                     sh 'dotnet build'                 }
-                 }
                  stage('Run My Test'){
                  steps{
-                 sh 'dotnet test'
+                 sh 'dotnet bin/Debug/net6.0/TrelloTestAutomation.dll'
                  }
                  }
 }
