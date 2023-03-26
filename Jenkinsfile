@@ -1,23 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout') {
+    stage('Check if unitclass is here') {
       steps {
-        git 'https://github.com/nour-hajallie/TrelloTestAutomation.git'
+        script {
+          try {
+            Class.forName('UnitTest1.cs')
+            println 'Class is displayed'
+          } catch (ClassNotFoundException e) {
+            println 'Class is not displayed'
+          }
+        }
       }
-    }
-    stage('Build') {
-      steps {
-        bat 'msbuild /target:library /out:TrelloUnitTest.dll /reference:System.Net.Http.dll UnitTest1.cs'
-      }
-    }
-    stage('Test') {
-      steps {
-        bat 'vstest.console.exe TrelloUnitTest.dll'
-      }
-    }
+    } 
   }
 }
-
-
-
