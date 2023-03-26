@@ -15,12 +15,11 @@ pipeline {
                  }
                  stage('Build') {
                  steps {
-                 dotnet build
-                 }
+                     sh 'dotnet build'                 }
                  }
                  stage('Run My Test'){
                  steps{
-                 dotnet run
+                 sh 'dotnet test'
                  }
                  }
 }
