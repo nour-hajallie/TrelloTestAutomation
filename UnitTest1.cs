@@ -46,6 +46,7 @@ namespace TrelloTestAutomation
 
             // set the ChromeOptions to use headless mode
             ChromeOptions options = new ChromeOptions();
+            options.BinaryLocation = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
             options.AddArgument("--headless");
 
             // create the WebDriver with the ChromeOptions
