@@ -76,6 +76,10 @@
               "target": "Package",
               "version": "[111.0.5563.6400, )"
             },
+            "WebDriver.ChromeDriver.win32": {
+              "target": "Package",
+              "version": "[111.0.5563.64, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.1.2, )"

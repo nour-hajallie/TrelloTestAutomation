@@ -16,6 +16,7 @@
           "Selenium.Support": "4.8.1",
           "Selenium.WebDriver": "4.8.1",
           "Selenium.WebDriver.ChromeDriver": "111.0.5563.6400",
+          "WebDriver.ChromeDriver.win32": "111.0.5563.64",
           "coverlet.collector": "3.1.2",
           "log4net": "2.0.15"
         },
@@ -412,7 +413,8 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
         }
-      }
+      },
+      "WebDriver.ChromeDriver.win32/111.0.5563.64": {}
     }
   },
   "libraries": {
@@ -581,6 +583,13 @@
       "sha512": "sha512-U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
       "path": "system.security.principal.windows/4.5.0",
       "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
+    },
+    "WebDriver.ChromeDriver.win32/111.0.5563.64": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qWZFpX/LZHyuUrP2mmxTS2rc1zzbL51gC9bEAckQZz1k42MMDwqzrcanfC5APvWhVF1I8dsxSAroGUV+CzQTDg==",
+      "path": "webdriver.chromedriver.win32/111.0.5563.64",
+      "hashPath": "webdriver.chromedriver.win32.111.0.5563.64.nupkg.sha512"
     }
   }
 }

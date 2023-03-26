@@ -534,6 +534,9 @@
             "rid": "win"
           }
         }
+      },
+      "WebDriver.ChromeDriver.win32/111.0.5563.64": {
+        "type": "package"
       }
     }
   },
@@ -1703,6 +1706,22 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "WebDriver.ChromeDriver.win32/111.0.5563.64": {
+      "sha512": "qWZFpX/LZHyuUrP2mmxTS2rc1zzbL51gC9bEAckQZz1k42MMDwqzrcanfC5APvWhVF1I8dsxSAroGUV+CzQTDg==",
+      "type": "package",
+      "path": "webdriver.chromedriver.win32/111.0.5563.64",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/LICENSE.chromedriver",
+        "content/chromedriver.exe",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "webdriver.chromedriver.win32.111.0.5563.64.nupkg.sha512",
+        "webdriver.chromedriver.win32.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1715,6 +1734,7 @@
       "Selenium.Support >= 4.8.1",
       "Selenium.WebDriver >= 4.8.1",
       "Selenium.WebDriver.ChromeDriver >= 111.0.5563.6400",
+      "WebDriver.ChromeDriver.win32 >= 111.0.5563.64",
       "coverlet.collector >= 3.1.2",
       "log4net >= 2.0.15"
     ]
@@ -1794,6 +1814,10 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[111.0.5563.6400, )"
+          },
+          "WebDriver.ChromeDriver.win32": {
+            "target": "Package",
+            "version": "[111.0.5563.64, )"
           },
           "coverlet.collector": {
             "target": "Package",

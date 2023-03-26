@@ -46,7 +46,7 @@ namespace TrelloTestAutomation
 
             // set the ChromeOptions to use headless mode
             ChromeOptions options = new ChromeOptions();
-            options.BinaryLocation = "C:\\Program Files\\Google\\Chrome\\Application\\111.0.5563.111\\chrome.exe";
+            options.BinaryLocation = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
             options.AddArgument("--headless");
 
             // create the WebDriver with the ChromeOptions
@@ -70,7 +70,7 @@ namespace TrelloTestAutomation
             log4net.Util.LogLog.InternalDebugging = true;
             XmlConfigurator.Configure(new FileInfo("../../../Config/log4net.config"));
         }
-/*
+
         [Test, Order(1)]
         public void TestUIInviteMemberToBoardViaEmail()
         {
@@ -187,7 +187,7 @@ namespace TrelloTestAutomation
                 Assert.Fail("Board with "+ boardNameUI + " name is not found");
             }
             driver.Quit();
-        }*/
+        }
 
         [Test, Order(3)]
         public void TestAPIInviteMemberToBoardViaEmail()

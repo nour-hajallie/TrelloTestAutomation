@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QXfmPE4AOwYnJilhbdOA5LIYAfIlm2FGQkhNzIHekNEoXvJ5eQBfGyoT7YW/dfRijRpPrUPRH84v8qhSl08u4g==",
+  "dgSpecHash": "cUH65opvVg3/Dw8E71TA1GJUKMqKXYpsenznZvIm4IUdJp4p2GmhBvYs6VVKBPoYmJ05n5UGZFGfue3+R+QPKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\SwordLeb\\OneDrive - SWORD GROUP\\Desktop\\Assignment\\cloud\\TrelloTestAutomation.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,8 @@
     "C:\\Users\\SwordLeb\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
     "C:\\Users\\SwordLeb\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
     "C:\\Users\\SwordLeb\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
-    "C:\\Users\\SwordLeb\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+    "C:\\Users\\SwordLeb\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
+    "C:\\Users\\SwordLeb\\.nuget\\packages\\webdriver.chromedriver.win32\\111.0.5563.64\\webdriver.chromedriver.win32.111.0.5563.64.nupkg.sha512"
   ],
   "logs": []
 }
