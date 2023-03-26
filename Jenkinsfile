@@ -8,9 +8,9 @@ pipeline {
             steps {
                 echo 'Hi, GeekFlare. Starting to build the App.'
                 checkout scm
-                sh "apt install apt-transport-https"
-                sh "sudo apt update"
-                sh "sudo apt install dotnet-sdk-6.0"
+                sh "sudo apt install apt-transport-https -y"
+                sh "sudo apt update -y"
+                sh "sudo apt install dotnet-sdk-6.0 -y"
             }
         }
         stage('1111') {
