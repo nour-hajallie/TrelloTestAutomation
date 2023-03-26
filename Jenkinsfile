@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'windows' }
+    agent any
     stages {
         stage('Checkout code') {
             steps {
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Run My Test') {
             steps {
-                bat "\"C:\\Program Files\\dotnet\\dotnet.exe\" bin\\Debug\\net6.0\\TrelloTestAutomation.dll"
+                sh 'dotnet test'
             }
         }
     }
