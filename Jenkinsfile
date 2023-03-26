@@ -1,17 +1,16 @@
 pipeline {
-  agent any
-  stages {
-    stage('Check if unitclass is here') {
-      steps {
-        script {
-          try {
-            Class.forName('UnitTest1.cs')
-            println 'Class is displayed'
-          } catch (ClassNotFoundException e) {
-            println 'Class is not displayed'
-          }
-        }
-      }
-    } 
-  }
+         agent any
+         stages {
+                 stage('Build') {
+                 steps {
+                     echo 'Hi, GeekFlare. Starting to build the App.'
+                     cat UnitTest1.cs
+                 }
+                 }
+                 stage('Test') {
+                 steps {
+                    input('Do you want to proceed?')
+                 }
+                 }
+}
 }
