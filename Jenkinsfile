@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
           try {
-            Class.forName('com.example.UnitTest1')
+            Class.forName('UnitTest1.cs')
             println 'Class is displayed'
           } catch (ClassNotFoundException e) {
             println 'Class is not displayed'
