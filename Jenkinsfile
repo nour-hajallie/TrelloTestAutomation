@@ -15,7 +15,7 @@ pipeline {
                  }
                  stage('Run My Test'){
                  steps{
-                 sh 'dotnet bin/Debug/net6.0/TrelloTestAutomation.dll'
+        sh 'mono bin/Debug/net6.0/YourApp.dll'
                  }
                  }
 }
