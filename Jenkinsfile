@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        PATH = "${PATH}:C:/Program Files/dotnet"
+    }
     stages {
         stage('Checkout code') {
             steps {
