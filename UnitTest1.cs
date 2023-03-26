@@ -40,6 +40,7 @@ namespace TrelloTestAutomation
         public void Setup()
         {
             //Create reference for the browser
+            //Test123
             driver = new OpenQA.Selenium.Chrome.ChromeDriver();
             environmentConfig = new EnvironmentConfig();
 
