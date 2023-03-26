@@ -1,17 +1,19 @@
 pipeline {
   agent any
+
+  environment {
+    // Set the GitHub PAT as an environment variable
+    GITHUB_TOKEN = credentials('github-token')
+  }
+
   stages {
-    stage('Check if unitclass is here') {
+    stage('Clone Repository') {
       steps {
-        script {
-          try {
-            Class.forName('UnitTest1.cs')
-            println 'Class is displayed'
-          } catch (ClassNotFoundException e) {
-            println 'Class is not displayed'
-          }
-        }
+        // Clone the GitHub repository using HTTPS URL and the GITHUB_TOKEN environment variable
+        git credentialsId: 'github-token', url: 'https://github.com/nour-hajallie/TrelloTestAutomation.git'
       }
-    } 
+    }
+
+    // Other stages in your pipeline
   }
 }
