@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        PATH = "${PATH};C:\\Program Files\\Mono\\bin"
-    }
     stages {
         stage('Checkout code') {
             steps {
@@ -18,7 +15,7 @@ pipeline {
         }
         stage('Run My Test') {
             steps {
-                sh 'mono bin/Debug/net6.0/TrelloTestAutomation.dll'
+                sh 'dotnet bin/Debug/net6.0/TrelloTestAutomation.dll'
             }
         }
     }
