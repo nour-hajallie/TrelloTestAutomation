@@ -14,6 +14,8 @@ using TrelloTestAutomation.DataEntities;
 using TrelloTestAutomation.BackendAPI;
 using System.Collections.Immutable;
 using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
 
 namespace TrelloTestAutomation
 {
@@ -41,8 +43,14 @@ namespace TrelloTestAutomation
         {
             //Create reference for the browser
             //Test123
-            driver = new OpenQA.Selenium.Chrome.ChromeDriver();
-            environmentConfig = new EnvironmentConfig();
+
+            // set the ChromeOptions to use headless mode
+            var options = new ChromeOptions();
+            options.AddArgument("--headless");
+            options.AddArgument("--disable-gpu");
+
+            // create the WebDriver with the ChromeOptions
+            driver = new RemoteWebDriver(options);
 
             //Values reading from App.config file
             var configFileMap = new ExeConfigurationFileMap { ExeConfigFilename = "../../../App.config" };
