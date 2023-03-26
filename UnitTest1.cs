@@ -45,12 +45,11 @@ namespace TrelloTestAutomation
             //Test123
 
             // set the ChromeOptions to use headless mode
-            var options = new ChromeOptions();
+            ChromeOptions options = new ChromeOptions();
             options.AddArgument("--headless");
-            options.AddArgument("--disable-gpu");
 
             // create the WebDriver with the ChromeOptions
-            driver = new RemoteWebDriver(options);
+            driver = new ChromeDriver(options);
 
             //Values reading from App.config file
             var configFileMap = new ExeConfigurationFileMap { ExeConfigFilename = "../../../App.config" };

@@ -10,12 +10,6 @@ pipeline {
                 checkout scm
             }
         }
-        stage('1111') {
-            steps {
-                sh "cat UnitTest1.cs"
-                sh "ls -la"
-            }
-        }
         stage('Run My Test') {
             steps {
                 sh 'dotnet test'
