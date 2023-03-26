@@ -1,10 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage('Clone Repository') {
+    stage('Check if unitclass is here') {
       steps {
-        git 'https://github.com/nour-hajallie/TrelloTestAutomation.git'
+        script {
+          try {
+            Class.forName('com.example.UnitTest1')
+            println 'Class is displayed'
+          } catch (ClassNotFoundException e) {
+            println 'Class is not displayed'
+          }
+        }
       }
-    }
+    } 
   }
 }
