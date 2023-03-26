@@ -8,10 +8,10 @@ pipeline {
             steps {
                 echo 'Hi, GeekFlare. Starting to build the App.'
                 checkout scm
-                wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
-                sudo chmod +x ./dotnet-install.sh
-                ./dotnet-install.sh --version latest --runtime aspnetcore
-                ./dotnet-install.sh --channel 7.0
+                sh "wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh"
+                sh "sudo chmod +x ./dotnet-install.sh"
+                sh "./dotnet-install.sh --version latest --runtime aspnetcore"
+                sh "./dotnet-install.sh --channel 7.0"
             }
         }
         stage('1111') {
