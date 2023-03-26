@@ -18,7 +18,9 @@ pipeline {
                 // Option 1: Specify the full path to the Mono executable
                 echo 'Running the test.'
 
-                sh 'C:\\Program Files\\Mono\\bin\\mono.exe bin/Debug/net6.0/TrelloTestAutomation.dll'
+                sh '"C:\\Program Files\\Mono\\bin\\mono.exe" bin/Debug/net6.0/TrelloTestAutomation.dll'
+
+
             }
         }
     }
