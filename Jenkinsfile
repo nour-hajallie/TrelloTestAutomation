@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Run My Test') {
             steps {
-                sh 'C:\\Program Files\\dotnet\\dotnet.exe bin/Debug/net6.0/TrelloTestAutomation.dll'
+                sh 'C:/Program\\ Files/dotnet/dotnet.exe bin/Debug/net6.0/TrelloTestAutomation.dll'
             }
         }
     }
