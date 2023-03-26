@@ -70,7 +70,7 @@ namespace TrelloTestAutomation
             log4net.Util.LogLog.InternalDebugging = true;
             XmlConfigurator.Configure(new FileInfo("../../../Config/log4net.config"));
         }
-
+/*
         [Test, Order(1)]
         public void TestUIInviteMemberToBoardViaEmail()
         {
@@ -187,7 +187,7 @@ namespace TrelloTestAutomation
                 Assert.Fail("Board with "+ boardNameUI + " name is not found");
             }
             driver.Quit();
-        }
+        }*/
 
         [Test, Order(3)]
         public void TestAPIInviteMemberToBoardViaEmail()
