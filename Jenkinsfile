@@ -9,7 +9,8 @@ pipeline {
                  }
                  stage('Test') {
                  steps {
-                     println 'cat UnitTest1'.execute().text
+                     sh "cat UnitTest1.cs"
+                     sh "ls -la"
                  }
                  }
 }
