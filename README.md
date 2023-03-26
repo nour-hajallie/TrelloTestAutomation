@@ -67,9 +67,9 @@ To have before running the functions
 
 2- Add the apikey and token of Trello in the App.config 
 
-3- Create a board from user 1 account and add the name board to the key 'boardNameUI' for the UI functions in App.config
+3- Create a board named "TestBoard" from user 1 account and add value "TestBoard" to the key 'boardNameUI' for the UI functions in App.config
 
-4- Create a board from user 1 account and add the name board to the key 'boardNameAPI' for the API functions in App.config
+4- Create a board named "TestBoard2" from user 1 account and add valye "TestBoard2" to the key 'boardNameAPI' for the API functions
 
 App.config should be filled in this way: 
 
@@ -97,7 +97,7 @@ To configure the logging, you will need to modify the 'log4net.config' file, loc
 
 The 'log4net.config' file contains the logging configuration settings. 
 
-By default, the file is configured to log to a file named 'LogReport.txt' in the project's root directory.
+By default, the file is configured to log to a file named 'LogReport.txt' in the directory '\bin\Debug\net6.0\Logs'.
 
 To modify the logging configuration, you can modify the 'log4net.config' file directly. 
 
