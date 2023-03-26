@@ -1,12 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout') {
+    stage('Clone Repository') {
       steps {
         git 'https://github.com/nour-hajallie/TrelloTestAutomation.git'
       }
-    } 
+    }
   }
 }
-
-
