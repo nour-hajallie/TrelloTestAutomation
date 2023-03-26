@@ -1,10 +1,10 @@
 pipeline {
          agent any
          stages {
-                 stage('Build') {
+                 stage('Checkout code') {
                  steps {
                      echo 'Hi, GeekFlare. Starting to build the App.'
-                     cat UnitTest1.cs
+                     checkout scm
                  }
                  }
                  stage('Test') {
