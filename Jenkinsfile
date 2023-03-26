@@ -9,7 +9,7 @@ pipeline {
                  }
                  stage('Test') {
                  steps {
-                     cat UnitTest1.cs
+                     println 'cat UnitTest1'.execute().text
                  }
                  }
 }
