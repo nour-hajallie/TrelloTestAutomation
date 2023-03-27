@@ -16,6 +16,7 @@ using System.Collections.Immutable;
 using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Firefox;
 
 namespace TrelloTestAutomation
 {
@@ -43,11 +44,16 @@ namespace TrelloTestAutomation
         {
             //Create reference for the browser
             // driver = new OpenQA.Selenium.Chrome.ChromeDriver();
-            var chromeOptions = new ChromeOptions();
-            chromeOptions.BinaryLocation = @"C:\Users\SwordLeb\Downloads\chrome.exe";
+            //var chromeOptions = new ChromeOptions();
+            //chromeOptions.BinaryLocation = @"C:\Users\SwordLeb\Downloads\chrome.exe";
 
-            chromeOptions.AddArgument("--headless");
-            driver = new ChromeDriver(chromeOptions);
+            //chromeOptions.AddArgument("--headless");
+            //driver = new ChromeDriver(chromeOptions);
+
+            FirefoxOptions options = new FirefoxOptions();
+            options.AddArgument("-headless"); // this starts Firefox in headless mode
+
+            driver = new FirefoxDriver(options);
 
             environmentConfig = new EnvironmentConfig();
 
