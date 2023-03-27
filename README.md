@@ -108,18 +108,42 @@ For example, you can change the logging level, the output location, or the forma
 
 2.	Open the solution file TrelloTestAutomation.sln in Visual Studio.
 
-3.	Restore the NuGet packages by selecting the solution node in Solution Explorer and 
+3.	Restore the NuGet packages by selecting the solution node in Solution Explorer and choosing "Restore NuGet Packages" from the right-click context menu.
 
-choosing "Restore NuGet Packages" from the right-click context menu.
-
-4. Build the solution by selecting "Build Solution" from the "Build" menu or 
-
-pressing Ctrl+Shift+B.
+4. Build the solution by selecting "Build Solution" from the "Build" menu or pressing Ctrl+Shift+B.
 
 5. Make sure that the Pre-Requisite are followed
 
-6. Open the Test Explorer by selecting "Test Explorer" from the "Test" menu.
+## Running Locally with Browser
 
-7. Run the tests by selecting "Run All" in the Test Explorer or by pressing Ctrl+R, A.
+1. In UnitTest1.cs make sure to remove the comment from lines 47 and 115 (lines related to Test with Browser) 
+
+2. In UnitTest1.cs make sure to comment lines 50-51-52 and lines 118-119-120 (lines related to Test without Browser (headless))
+
+3. Open the Test Explorer by selecting "Test Explorer" from the "Test" menu.
+
+4. Run the tests by selecting "Run All" in the Test Explorer or by pressing Ctrl+R, A.
+
+## Running Locally with no Browser (headless)
+
+1. In UnitTest1.cs make sure to comment lines 47 and 115 (lines related to Test with Browser)
+
+2. In UnitTest1.cs make sure to remove the comment from lines 50-51-52 and lines 118-119-120 (lines related to Test without Browser (headless))
+
+3. Open the Test Explorer by selecting "Test Explorer" from the "Test" menu.
+
+4. Run the tests by selecting "Run All" in the Test Explorer or by pressing Ctrl+R, A.
+
+## Running the Jenkins Pipeline (CHECK THIS PART AGAIN)
+
+To run the Jenkins pipeline, follow these steps:
+
+1. Install Jenkins on your local machine or server.
+
+2. Create a new Jenkins job and select "Pipeline" as the job type.
+
+3. In the Pipeline script section, copy and paste the code from the Jenkinsfile.
+
+4. Save the job configuration and click on "Build Now" to run the pipeline.
 
 

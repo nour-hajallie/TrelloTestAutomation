@@ -134,10 +134,10 @@ namespace TrelloTestAutomation
 
                     //Check if the notification is displayed
                     log.Debug("Check if the notification is displayed");
-                    Assert.IsTrue(boardPage.isNotificationDisplayed(driver));
+                    Assert.IsTrue(boardPage.isNotificationDisplayed(driver), "Notification is not displayed");
 
                     //Check if the notification content is correct
-                    Assert.IsTrue(boardPage.isContentNotificationDisplayed(driver, boardNameUI));
+                    Assert.IsTrue(boardPage.isContentNotificationDisplayed(driver, boardNameUI), "Content of Notification is not displayed");
                     log.Debug("Notification Content is displayed: Added you to the board " + boardNameUI + " a few seconds ago");
                 }
                 else
