@@ -69,6 +69,7 @@ namespace TrelloTest.PageObjects
                 return false;
             }
         }
+
         public void clickOnNotificationButton(IWebDriver driver)
         {
             Thread.Sleep(10000);

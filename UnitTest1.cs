@@ -43,7 +43,10 @@ namespace TrelloTestAutomation
         public void Setup()
         {
             //Create reference for the browser
-           // driver = new ChromeDriver();
+            //Test with Browser (Remove the comment if you want to test without browser)
+            //driver = new ChromeDriver();
+
+            //Test without Browser (Comment them if you want to test with browser)
             var chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("--headless");
             driver = new ChromeDriver(chromeOptions);
@@ -107,7 +110,11 @@ namespace TrelloTestAutomation
 
                     //Close the browser to authenticate with user 2 and check the invite
                     driver.Quit();
-                    //driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+
+                    //Test with Browser (Remove the comment if you want to test without browser)
+                    //driver = new ChromeDriver();
+
+                    //Test without Browser (Comment them if you want to test with browser)
                     var chromeOptions = new ChromeOptions();
                     chromeOptions.AddArgument("--headless");
                     driver = new ChromeDriver(chromeOptions);
