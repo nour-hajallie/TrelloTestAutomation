@@ -21,4 +21,5 @@ pipeline {
                     archiveArtifacts artifacts: 'LogReport.log', onlyIfSuccessful: false
                     }
             }
+            }
 }
