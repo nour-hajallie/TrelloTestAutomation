@@ -52,7 +52,7 @@ To configure the logging, you will need to modify the 'log4net.config' file, loc
 
 The 'log4net.config' file contains the logging configuration settings. 
 
-By default, the file is configured to log to a file named 'LogReport.txt' in the directory '\bin\Debug\net6.0\Logs'.
+By default, the file is configured to log to a file named 'LogReport_yyyyMMdd.txt' in the directory 'bin\Debug\net6.0\Logs\LogReport.logLogs'.
 
 To modify the logging configuration, you can modify the 'log4net.config' file directly. 
 
@@ -104,7 +104,7 @@ git clone https://github.com/nour-hajallie/TrelloTestAutomation.git
 
 ## Running the project Locally
 
-The project was designed to run in a headless mood (headless browser), so the below steps can be executed to run the project locally and in a normal mode ( You will be able to see the browser executing the test)
+The project was designed to run in a headless mode (headless browser), so the below steps can be executed to run the project locally and in a normal mode ( You will be able to see the browser executing the test):
 
 1. In UnitTest1.cs make sure to **remove the comment** from lines 47 
 ```
