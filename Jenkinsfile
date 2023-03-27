@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        PATH = "/usr/bin/chromedriver"
-    }
     stages {
         stage('Checkout code') {
             steps {
