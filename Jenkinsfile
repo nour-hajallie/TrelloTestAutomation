@@ -16,9 +16,9 @@ pipeline {
         }
         stage('Retrieve logs') {
             steps {
-                sh 'cp /var/lib/jenkins/workspace/trello/bin/Debug/net6.0/Logs/LogReport.log ./'
-                archiveArtifacts artifacts: 'LogReport.log', onlyIfSuccessful: false
+                    sh 'cat /var/lib/jenkins/workspace/trello/bin/Debug/net6.0/Logs/LogReport.log'
+                    sh 'cp /var/lib/jenkins/workspace/trello/bin/Debug/net6.0/Logs/LogReport.log ./'
+                    archiveArtifacts artifacts: 'LogReport.log', onlyIfSuccessful: false
+                    }
             }
-        }
-    }
 }
