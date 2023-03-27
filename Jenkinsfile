@@ -16,10 +16,11 @@ pipeline {
         }
         stage('Retrieve logs') {
             steps {
-                    sh 'cat /var/lib/jenkins/workspace/trello/bin/Debug/net6.0/Logs/LogReport.log'
-                    sh 'cp /var/lib/jenkins/workspace/trello/bin/Debug/net6.0/Logs/LogReport.log ./'
-                    archiveArtifacts artifacts: 'LogReport.log', onlyIfSuccessful: false
-                    }
+                def date = new Date().format("yyyyMMdd")
+                sh "cat /var/lib/jenkins/workspace/trello/bin/Debug/net6.0/Logs/LogReport_${date}.log"
+                sh "cp /var/lib/jenkins/workspace/trello/bin/Debug/net6.0/Logs/LogReport_${date}.log ./"
+                archiveArtifacts artifacts: "LogReport_${date}.log", onlyIfSuccessful: false
             }
+        }
             }
 }
