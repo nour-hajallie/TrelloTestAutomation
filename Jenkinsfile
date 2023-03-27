@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Run My Test') {
             steps {
+                echo $PATH
                 sh 'chromedriver --version'
                 sh 'google-chrome --version'
                 sh 'dotnet test'
