@@ -154,3 +154,42 @@ log4net: Opening file for writing [C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desk
 log4net: Created Appender [RollingFile]
 log4net: Adding appender named [RollingFile] to logger [root].
 log4net: Hierarchy Threshold []
+log4net: configuring repository [log4net-default-repository] using file [../../../Config/log4net.config]
+log4net: configuring repository [log4net-default-repository] using stream
+log4net: loading XML configuration
+log4net: Configuring Repository [log4net-default-repository]
+log4net: Configuration update mode [Merge].
+log4net: Logger [root] Level string is [DEBUG].
+log4net: Logger [root] level set to [name="DEBUG",value=30000].
+log4net: Loading Appender [RollingFile] type: [log4net.Appender.RollingFileAppender]
+log4net: Setting Property [File] to String value [Logs/LogReport.log]
+log4net: Setting Property [AppendToFile] to Boolean value [True]
+log4net: Setting Property [RollingStyle] to RollingMode value [Date]
+log4net: Setting Property [DatePattern] to String value ['Logs/LogReport_'yyyyMMdd'.log']
+log4net: Setting Property [MaxSizeRollBackups] to Int32 value [5]
+log4net: Setting Property [MaximumFileSize] to String value [10MB]
+log4net: Setting Property [StaticLogFileName] to Boolean value [False]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [ConversionPattern] to String value [%date [%thread] %-5level %logger - %message%newline]
+log4net: Converter [date] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [thread] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [] ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [level] Option [] Format [min=5,max=2147483647,leftAlign=True]
+log4net: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [logger] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [literal] Option [ - ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: Setting Property [Layout] to object [log4net.Layout.PatternLayout]
+log4net: Type = [0], r0 = [Logs/LogReport_19700101.log], r1 = [Logs/LogReport_19700101.log]
+log4net: Type = [1], r0 = [Logs/LogReport_19700101.log], r1 = [Logs/LogReport_19700101.log]
+log4net: Type = [2], r0 = [Logs/LogReport_19700101.log], r1 = [Logs/LogReport_19700101.log]
+log4net: Type = [3], r0 = [Logs/LogReport_19700101.log], r1 = [Logs/LogReport_19700102.log]
+log4net: Searched for existing files in [C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\cloud\bin\Debug\net6.0\Logs]
+log4net: curSizeRollBackups starts at [0]
+log4net: Opening file for writing [C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\cloud\bin\Debug\net6.0\Logs\LogReport.logLogs/LogReport_20230327.log] append [True]
+log4net: Created Appender [RollingFile]
+log4net: Adding appender named [RollingFile] to logger [root].
+log4net: Hierarchy Threshold []
