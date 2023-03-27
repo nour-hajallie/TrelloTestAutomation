@@ -74,13 +74,13 @@ To have before running the functions
 App.config should be filled in this way: 
 
 	<appSettings>
-		<add key="emailUser1" value="nhajallie@hotmail.com" />
-		<add key="passwordUser1" value="NourH@j@llie123" />
-		<add key="usernameUser1" value="nhajallie"/>
-		<add key="emailUser2" value="nourhajallie2@gmail.com"/>
-		<add key="passwordUser2" value="NourH@j@llie123" />
-		<add key="key" value="0c2b5f557561a0b2fa52e2075bd5948a"/>
-		<add key="token" value="ATTA25b95ab7f7b78f13f1c04102248ad5895c7b23764433d281ff07f75aa9522205A3503724"/>
+		<add key="emailUser1" value="email_user1@hotmail.com" />
+		<add key="passwordUser1" value="pass_user_1" />
+		<add key="usernameUser1" value="username-user1"/>
+		<add key="emailUser2" value="email_user2@hotmail.com"/>
+		<add key="passwordUser2" value="pass_user_2" />
+		<add key="key" value="the32hexcharsapikeyyougotfromtrelloapi"/>
+		<add key="token" value="the64hexcharstoken"/>
 		<add key="boardNameUI" value="TestBoard"/>
 		<add key="boardNameAPI" value="TestBoard2"/>
 	</appSettings>
