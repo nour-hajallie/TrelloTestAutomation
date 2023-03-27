@@ -106,7 +106,7 @@ git clone https://github.com/nour-hajallie/TrelloTestAutomation.git
 
 The project was designed to run in a headless mood (headless browser), so the below steps can be executed to run the project locally and in a normal mode ( You will be able to see the browser executing the test)
 
-1. In UnitTest1.cs make sure to remove the comment from lines 47 
+1. In UnitTest1.cs make sure to **remove the comment** from lines 47 
 ```
 //driver = new ChromeDriver();
 ```
@@ -117,7 +117,7 @@ and 115 (lines related to Test with Browser)
 //driver = new ChromeDriver();
 ```
 
-2. In UnitTest1.cs make sure to comment lines 50-51-52 
+2. In UnitTest1.cs make sure to **comment** lines 50-51-52 
 
 ```
 var chromeOptions = new ChromeOptions();
@@ -177,3 +177,5 @@ To run the Jenkins pipeline, follow these steps:
 		- The Jenkins pipeline will be reading the Jenkins file from this repo to run the stages or in case any push was done to the repo, the pipeline will be running automatically.
 
 4. Save the job configuration and click on "Build Now" to run the pipeline.
+
+[PipelineRun](pipelinePicture.png)
