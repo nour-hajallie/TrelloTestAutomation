@@ -42,7 +42,11 @@ namespace TrelloTestAutomation
         public void Setup()
         {
             //Create reference for the browser
-            driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+            // driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+            var chromeOptions = new ChromeOptions();
+            chromeOptions.AddArgument("--headless");
+            var driver = new ChromeDriver(chromeOptions);
+
             environmentConfig = new EnvironmentConfig();
 
             //Values reading from App.config file
