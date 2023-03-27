@@ -71,7 +71,7 @@ Below are the requirements or conditions that need to be met before the testing 
 
 4- Generate api key and token for the trello api.
 
-5- Fill the emails and passwords created in step 1, the board name UI created in step 2, the board name API created in step 3, in addition to the api key and token created in the step 4 IN the App.config
+5- Fill the emails and passwords created in step 1 (you need also the username), the board name UI created in step 2, the board name API created in step 3, in addition to the api key and token created in the step 4 IN the App.config
 
 App.config should be filled in this way: 
 
