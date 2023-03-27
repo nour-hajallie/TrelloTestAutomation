@@ -43,11 +43,10 @@ namespace TrelloTestAutomation
         public void Setup()
         {
             //Create reference for the browser
-            //driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+           // driver = new ChromeDriver();
             var chromeOptions = new ChromeOptions();
-            chromeOptions.BinaryLocation = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
             chromeOptions.AddArgument("--headless");
-            driver = new ChromeDriver(@"C:\Program Files (x86)\Chrome\chromedriver.exe", chromeOptions);
+            driver = new ChromeDriver(chromeOptions);
 
             environmentConfig = new EnvironmentConfig();
 
@@ -105,6 +104,34 @@ namespace TrelloTestAutomation
                 {
                     log.Debug("User 2: " + emailUser2 + " is invited to joint the board");
                     Assert.IsTrue(true, "User 2: " + emailUser2 + " is invited to join the board");
+
+                    //Close the browser to authenticate with user 2 and check the invite
+                    driver.Quit();
+                    //driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+                    var chromeOptions = new ChromeOptions();
+                    chromeOptions.AddArgument("--headless");
+                    driver = new ChromeDriver(chromeOptions);
+
+                    driver.Navigate().GoToUrl(trollyLoginUrl);
+
+                    log.Debug("Authenticate with User 2: " + emailUser2);
+                    loginPage = new LoginPage(driver);
+                    loginPage.setEmailField(emailUser2);
+                    loginPage.clickContinueLoginButton();
+                    loginPage.setPasswordField(passwordUser2);
+                    boardsPage = loginPage.clickLoginButton();
+
+                    //click on notification button
+                    log.Debug("Click on Notification button");
+                    boardPage.clickOnNotificationButton(driver);
+
+                    //Check if the notification is displayed
+                    log.Debug("Check if the notification is displayed");
+                    Assert.IsTrue(boardPage.isNotificationDisplayed(driver));
+
+                    //Check if the notification content is correct
+                    Assert.IsTrue(boardPage.isContentNotificationDisplayed(driver, boardNameUI));
+                    log.Debug("Notification Content is displayed: Added you to the board " + boardNameUI + " a few seconds ago");
                 }
                 else
                 {
@@ -118,31 +145,6 @@ namespace TrelloTestAutomation
                 Assert.Fail("Board with " + boardNameUI + " name is not found");
             }
 
-            //Close the browser to authenticate with user 2 and check the invite
-            driver.Quit();
-            driver = new OpenQA.Selenium.Chrome.ChromeDriver();
-            driver.Navigate().GoToUrl(trollyLoginUrl);
-
-            log.Debug("Authenticate with User 2: " + emailUser2);
-            loginPage = new LoginPage(driver);
-            loginPage.setEmailField(emailUser2);
-            loginPage.clickContinueLoginButton();
-            loginPage.setPasswordField(passwordUser2);
-            boardsPage = loginPage.clickLoginButton();
-
-            //click on notification button
-            log.Debug("Click on Notification button");
-            boardPage.clickOnNotificationButton(driver);
-
-            //Check if the notification is displayed
-            log.Debug("Check if the notification is displayed");
-            Assert.IsTrue(boardPage.isNotificationDisplayed(driver));
-
-            //Check if the notification content is correct
-            Assert.IsTrue(boardPage.isContentNotificationDisplayed(driver, boardNameUI));
-            log.Debug("Notification Content is displayed: Added you to the board "+ boardNameUI + " a few seconds ago");
-
-            driver.Quit();
         }
 
         [Test, Order(2)]
