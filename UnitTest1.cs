@@ -51,9 +51,12 @@ namespace TrelloTestAutomation
             //driver = new ChromeDriver(chromeOptions);
 
             FirefoxOptions options = new FirefoxOptions();
-            options.AddArgument("-headless"); // this starts Firefox in headless mode
+            FirefoxDriverService service = FirefoxDriverService.CreateDefaultService(@"C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\firfoxDriver"); // path to GeckoDriver executable
+            options.AddArguments("--headless"); // run in headless mode
+            options.SetPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf"); // set preferences
 
-            driver = new FirefoxDriver(options);
+            IWebDriver driver = new FirefoxDriver(service, options);
+
 
             environmentConfig = new EnvironmentConfig();
 
