@@ -71,7 +71,7 @@ namespace TrelloTest.PageObjects
         }
         public void clickOnNotificationButton(IWebDriver driver)
         {
-            Thread.Sleep(5000);
+            Thread.Sleep(10000);
             try
             {
                 IWebElement notificationButtonElement = driver.FindElement(notificationButton);
