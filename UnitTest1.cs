@@ -43,20 +43,11 @@ namespace TrelloTestAutomation
         public void Setup()
         {
             //Create reference for the browser
-            // driver = new OpenQA.Selenium.Chrome.ChromeDriver();
-            //var chromeOptions = new ChromeOptions();
-            //chromeOptions.BinaryLocation = @"C:\Users\SwordLeb\Downloads\chrome.exe";
-
-            //chromeOptions.AddArgument("--headless");
-            //driver = new ChromeDriver(chromeOptions);
-
-            FirefoxOptions options = new FirefoxOptions();
-            FirefoxDriverService service = FirefoxDriverService.CreateDefaultService(@"C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\firfoxDriver"); // path to GeckoDriver executable
-            options.AddArguments("--headless"); // run in headless mode
-            options.SetPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf"); // set preferences
-
-            IWebDriver driver = new FirefoxDriver(service, options);
-
+            //driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+            var chromeOptions = new ChromeOptions();
+            chromeOptions.BinaryLocation = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
+            chromeOptions.AddArgument("--headless");
+            driver = new ChromeDriver(@"C:\Program Files (x86)\Chrome\chromedriver.exe", chromeOptions);
 
             environmentConfig = new EnvironmentConfig();
 
