@@ -42,15 +42,8 @@ namespace TrelloTestAutomation
         public void Setup()
         {
             //Create reference for the browser
-            //Test123
-
-            ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--headless");
-            options.AddArgument("--disable-gpu");
-            options.AddArgument("--no-sandbox");
-            options.BinaryLocation = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
-            driver = new ChromeDriver(options);
-
+            driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+            environmentConfig = new EnvironmentConfig();
 
             //Values reading from App.config file
             var configFileMap = new ExeConfigurationFileMap { ExeConfigFilename = "../../../App.config" };
