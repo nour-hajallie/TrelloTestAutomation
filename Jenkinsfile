@@ -9,13 +9,9 @@ pipeline {
         }
         stage('Run My Test') {
             steps {
-                script {
-                    def path = System.getenv("PATH")
-                    println "PATH: $path"
                     sh 'chromedriver --version'
                     sh 'google-chrome --version'
                     sh 'dotnet test'
-                }
             }
         }
     }
