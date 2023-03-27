@@ -44,13 +44,13 @@ namespace TrelloTestAutomation
             //Create reference for the browser
             //Test123
 
-            // set the ChromeOptions to use headless mode
             ChromeOptions options = new ChromeOptions();
-            options.BinaryLocation = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
             options.AddArgument("--headless");
-
-            // create the WebDriver with the ChromeOptions
+            options.AddArgument("--disable-gpu");
+            options.AddArgument("--no-sandbox");
+            options.BinaryLocation = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
             driver = new ChromeDriver(options);
+
 
             //Values reading from App.config file
             var configFileMap = new ExeConfigurationFileMap { ExeConfigFilename = "../../../App.config" };
