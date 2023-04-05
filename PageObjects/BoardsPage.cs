@@ -34,7 +34,7 @@ namespace TrelloTest.PageObjects
 
         public By boardCreated => By.XPath("//*[@id=\"content\"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div[2]/div/div[2]/ul/li[2]/a/div/div[1]/div");
         public By boardDeletedSuccessMessage => By.XPath("/div/div/div[1]");
-        public By notificationButton => By.XPath("//*[@id=\"header\"]/div[3]/div[2]/div[1]/button/span");
+        public By notificationButton => By.XPath("//*[@id=\"header\"]/div[2]/div[2]/div/button/span");
         public By notificationBoardAccess => By.XPath("/html/body/div[3]/div/section/div/div[3]/div/div[3]/div/div[1]/div/div/div/div[4]");
 
         public string notificationContent = "Added you to the board ";
@@ -72,7 +72,7 @@ namespace TrelloTest.PageObjects
 
         public void clickOnNotificationButton(IWebDriver driver)
         {
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
             try
             {
                 IWebElement notificationButtonElement = driver.FindElement(notificationButton);

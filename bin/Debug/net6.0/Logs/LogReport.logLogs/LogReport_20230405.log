@@ -1,0 +1,302 @@
+2023-04-05 10:10:17,604 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:10:21,735 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: 
+2023-04-05 10:10:26,930 [NonParallelWorker] ERROR TrelloTest.PageObjects.LoginPage - Error while filling the password 
+OpenQA.Selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=111.0.5563.147)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Clear()
+   at TrelloTest.PageObjects.LoginPage.setPasswordField(String password) in C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\Nour_Hajallie\PageObjects\LoginPage.cs:line 74
+2023-04-05 10:10:26,983 [NonParallelWorker] ERROR TrelloTest.PageObjects.LoginPage - Error while clicking on login button 
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-submit"}
+  (Session info: headless chrome=111.0.5563.147)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at TrelloTest.PageObjects.LoginPage.clickLoginButton() in C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\Nour_Hajallie\PageObjects\LoginPage.cs:line 88
+2023-04-05 10:10:26,986 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if Board:  is available
+2023-04-05 10:10:32,017 [NonParallelWorker] ERROR TrelloTestAutomation.Tests - Board with  name is not found
+2023-04-05 10:10:33,098 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing function TestUIDeleteBoard Started
+2023-04-05 10:10:35,286 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: 
+2023-04-05 10:10:40,449 [NonParallelWorker] ERROR TrelloTest.PageObjects.LoginPage - Error while filling the password 
+OpenQA.Selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=111.0.5563.147)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Clear()
+   at TrelloTest.PageObjects.LoginPage.setPasswordField(String password) in C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\Nour_Hajallie\PageObjects\LoginPage.cs:line 74
+2023-04-05 10:10:40,463 [NonParallelWorker] ERROR TrelloTest.PageObjects.LoginPage - Error while clicking on login button 
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-submit"}
+  (Session info: headless chrome=111.0.5563.147)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at TrelloTest.PageObjects.LoginPage.clickLoginButton() in C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\Nour_Hajallie\PageObjects\LoginPage.cs:line 88
+2023-04-05 10:10:40,466 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if Board:  is available
+2023-04-05 10:10:45,491 [NonParallelWorker] ERROR TrelloTestAutomation.Tests - Board with  name is not found
+2023-04-05 10:10:46,495 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing API function TestAPIInviteMemberToBoardViaEmail Started
+2023-04-05 10:10:46,589 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Call Get Boards by member api to store the board id
+2023-04-05 10:10:46,592 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id} trello request to Delete a Board.
+2023-04-05 10:10:47,747 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing API function TestAPIDeleteBoard Started
+2023-04-05 10:10:47,749 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Call Get Boards by member api to store the board id
+2023-04-05 10:10:47,750 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id} trello request to Delete a Board.
+2023-04-05 10:11:52,899 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:11:54,384 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:11:59,702 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:12:04,948 [NonParallelWorker] ERROR TrelloTestAutomation.Tests - Board with TestBoard name is not found
+2023-04-05 10:12:06,058 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing function TestUIDeleteBoard Started
+2023-04-05 10:12:07,775 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:12:13,044 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:12:18,441 [NonParallelWorker] ERROR TrelloTestAutomation.Tests - Board with TestBoard name is not found
+2023-04-05 10:12:19,517 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing API function TestAPIInviteMemberToBoardViaEmail Started
+2023-04-05 10:12:19,539 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Call Get Boards by member api to store the board id
+2023-04-05 10:12:19,541 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id} trello request to Delete a Board.
+2023-04-05 10:12:20,412 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-04-05 10:12:20,412 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-04-05 10:12:20,439 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Board Id found: 642d1eb1ee726a7d5c39787b
+2023-04-05 10:12:20,439 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Calling api function to Get Memberships of a Board before any invitation is done
+2023-04-05 10:12:20,439 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id}/memberships trello request to Get Memberships of a Board.
+2023-04-05 10:12:20,439 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Call Execute function with the request defined
+2023-04-05 10:12:20,693 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-04-05 10:12:20,694 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-04-05 10:12:20,694 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Calling api function to Invite a Member to a Board via their email address
+2023-04-05 10:12:20,694 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running PUT /1/boards/{id}/members trello request to Invite a Member to a Board via their email address.
+2023-04-05 10:12:20,695 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Call Execute function with the request defined
+2023-04-05 10:12:21,365 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-04-05 10:12:21,365 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-04-05 10:12:21,372 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Calling api function to Get Memberships of a Board after invitation was done
+2023-04-05 10:12:21,372 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id}/memberships trello request to Get Memberships of a Board.
+2023-04-05 10:12:21,372 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Call Execute function with the request defined
+2023-04-05 10:12:21,595 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-04-05 10:12:21,595 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-04-05 10:12:21,599 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - New member 6419ba316e4f3309bf6116bc (normal) has been added to the board
+2023-04-05 10:12:22,620 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing API function TestAPIDeleteBoard Started
+2023-04-05 10:12:22,623 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Call Get Boards by member api to store the board id
+2023-04-05 10:12:22,623 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id} trello request to Delete a Board.
+2023-04-05 10:12:23,173 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Execute the request and getting the response deserialized
+2023-04-05 10:12:23,173 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - API call successful
+2023-04-05 10:12:23,174 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Board Id found: 642d1eb1ee726a7d5c39787b
+2023-04-05 10:12:23,175 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Calling api function to delete a board
+2023-04-05 10:12:23,175 [NonParallelWorker] INFO  TrelloTestAutomation.BackendAPI.TrelloApi - Running Get /1/boards/{id} trello request to Delete a Board.
+2023-04-05 10:12:24,617 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Board with name TestBoard2 and id 642d1eb1ee726a7d5c39787b is deleted
+2023-04-05 10:12:45,379 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:12:46,921 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:12:52,250 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:12:57,266 [NonParallelWorker] ERROR TrelloTestAutomation.Tests - Board with TestBoard name is not found
+2023-04-05 10:14:23,511 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:14:25,427 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:14:30,989 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:14:39,533 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:14:44,757 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:14:49,920 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:14:55,211 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:15:13,735 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:15:17,998 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:15:23,389 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:15:33,444 [16] ERROR TrelloTest.PageObjects.BoardsPage - Error clicking on notification button
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div[3]/div[2]/div[1]/button/span"}
+  (Session info: headless chrome=111.0.5563.147)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at TrelloTest.PageObjects.BoardsPage.clickOnNotificationButton(IWebDriver driver) in C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\Nour_Hajallie\PageObjects\BoardsPage.cs:line 78
+2023-04-05 10:15:33,465 [16] DEBUG TrelloTestAutomation.Tests - Check if the notification is displayed
+2023-04-05 10:16:28,913 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:16:30,494 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:16:35,987 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:16:42,775 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:16:48,019 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:16:53,171 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:16:58,465 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:17:13,953 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:17:16,823 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:17:22,253 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:17:32,298 [16] ERROR TrelloTest.PageObjects.BoardsPage - Error clicking on notification button
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div[3]/div[2]/div[1]/button/span"}
+  (Session info: headless chrome=111.0.5563.147)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at TrelloTest.PageObjects.BoardsPage.clickOnNotificationButton(IWebDriver driver) in C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\Nour_Hajallie\PageObjects\BoardsPage.cs:line 78
+2023-04-05 10:17:32,319 [16] DEBUG TrelloTestAutomation.Tests - Check if the notification is displayed
+2023-04-05 10:19:00,918 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:19:03,774 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:19:09,384 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:19:16,853 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:19:22,232 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:19:27,401 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:19:32,717 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:19:48,121 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:20:15,050 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:20:19,532 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:20:29,033 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:20:42,439 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:20:47,892 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:20:53,175 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:20:58,815 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:21:11,576 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:21:19,201 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:21:24,976 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:21:35,027 [16] ERROR TrelloTest.PageObjects.BoardsPage - Error clicking on notification button
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div[3]/div[2]/div[1]/button/span"}
+  (Session info: chrome=111.0.5563.147)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at TrelloTest.PageObjects.BoardsPage.clickOnNotificationButton(IWebDriver driver) in C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\Nour_Hajallie\PageObjects\BoardsPage.cs:line 78
+2023-04-05 10:21:35,066 [16] DEBUG TrelloTestAutomation.Tests - Check if the notification is displayed
+2023-04-05 10:24:27,807 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:24:30,853 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:24:37,782 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:24:48,057 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:24:53,837 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:24:59,741 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:25:05,136 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:25:24,017 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:25:31,000 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:25:37,261 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:25:47,330 [16] ERROR TrelloTest.PageObjects.BoardsPage - Error clicking on notification button
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div[3]/div[2]/div[1]/button/span"}
+  (Session info: chrome=111.0.5563.147)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at TrelloTest.PageObjects.BoardsPage.clickOnNotificationButton(IWebDriver driver) in C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\Nour_Hajallie\PageObjects\BoardsPage.cs:line 78
+2023-04-05 10:25:47,365 [16] DEBUG TrelloTestAutomation.Tests - Check if the notification is displayed
+2023-04-05 10:28:49,363 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:28:51,236 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:28:56,931 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:29:04,080 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:29:09,405 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:29:14,577 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:29:19,924 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:29:42,201 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:29:45,511 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:29:50,979 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:32:35,497 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:32:38,031 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:32:44,693 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:32:52,817 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:32:58,117 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:33:03,337 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:33:08,667 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:33:31,866 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:33:48,311 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:33:58,530 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:37:24,875 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:37:27,181 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:37:32,933 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:37:40,244 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:37:45,550 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:37:50,719 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:37:56,048 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:38:01,063 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:38:04,494 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:38:09,995 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:40:42,136 [16] INFO  TrelloTestAutomation.Tests - Testing function TestUIDeleteBoard Started
+2023-04-05 10:40:45,066 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:40:53,030 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:41:02,897 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:41:08,641 [16] DEBUG TrelloTestAutomation.Tests - Click on 3 dots to close the board
+2023-04-05 10:41:24,625 [16] DEBUG TrelloTestAutomation.Tests - Check if board is closed successfully
+2023-04-05 10:41:29,660 [16] DEBUG TrelloTestAutomation.Tests - Board is closed successfully
+2023-04-05 10:41:29,661 [16] DEBUG TrelloTestAutomation.Tests - Delete the board
+2023-04-05 10:41:34,820 [16] DEBUG TrelloTestAutomation.Tests - Board Deleted successfully
+2023-04-05 10:42:49,156 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:42:51,250 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:42:56,813 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:43:06,234 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:43:11,547 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:43:16,779 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:43:22,106 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:43:27,123 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:43:31,352 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:43:36,838 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:48:04,308 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:48:08,870 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:48:17,375 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:48:33,743 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:48:39,663 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:48:45,259 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:48:50,918 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:48:55,935 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:49:01,630 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:49:07,939 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:52:55,656 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 10:52:58,269 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 10:53:03,851 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 10:53:12,592 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 10:53:17,891 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 10:53:23,092 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 10:53:28,427 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 10:53:33,438 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 10:53:37,028 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 10:53:42,513 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 10:54:18,167 [16] ERROR TrelloTest.PageObjects.BoardsPage - Error clicking on notification button
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div[2]/div[1]/div/button/span"}
+  (Session info: chrome=111.0.5563.147)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at TrelloTest.PageObjects.BoardsPage.clickOnNotificationButton(IWebDriver driver) in C:\Users\SwordLeb\OneDrive - SWORD GROUP\Desktop\Assignment\Nour_Hajallie\PageObjects\BoardsPage.cs:line 78
+2023-04-05 10:54:22,381 [16] DEBUG TrelloTestAutomation.Tests - Check if the notification is displayed
+2023-04-05 11:07:18,381 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 11:07:22,153 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 11:07:37,633 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 11:07:50,677 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 11:07:56,292 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 11:08:01,579 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 11:08:07,076 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 11:08:12,106 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 11:08:18,289 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 11:08:24,650 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 11:09:34,261 [16] DEBUG TrelloTestAutomation.Tests - Check if the notification is displayed
+2023-04-05 11:12:07,605 [16] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 11:12:09,415 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 11:12:15,191 [16] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 11:12:22,724 [16] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 11:12:28,055 [16] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 11:12:33,247 [16] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 11:12:38,576 [16] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 11:12:43,592 [16] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 11:12:47,199 [16] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 11:12:52,663 [16] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 11:13:26,870 [16] DEBUG TrelloTestAutomation.Tests - Check if the notification is displayed
+2023-04-05 11:13:51,801 [16] DEBUG TrelloTestAutomation.Tests - Notification Content is displayed: Added you to the board TestBoard a few seconds ago
+2023-04-05 11:14:15,578 [NonParallelWorker] INFO  TrelloTestAutomation.Tests - Testing UI function TestUIInviteMemberToBoardViaEmail Started
+2023-04-05 11:14:17,505 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 1: nhajallie@hotmail.com
+2023-04-05 11:14:22,889 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if Board: TestBoard is available
+2023-04-05 11:14:30,147 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Click on the Board Created: TestBoard
+2023-04-05 11:14:35,506 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Click on Share button to invite User 2: nourhajallie2@gmail.com
+2023-04-05 11:14:40,576 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Invite user 2 nourhajallie2@gmail.com to join the board
+2023-04-05 11:14:45,905 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if user 2 is invited
+2023-04-05 11:14:50,919 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - User 2: nourhajallie2@gmail.com is invited to joint the board
+2023-04-05 11:14:54,444 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Authenticate with User 2: nourhajallie2@gmail.com
+2023-04-05 11:14:59,796 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Click on Notification button
+2023-04-05 11:15:08,564 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Check if the notification is displayed
+2023-04-05 11:15:13,675 [NonParallelWorker] DEBUG TrelloTestAutomation.Tests - Notification Content is displayed: Added you to the board TestBoard a few seconds ago
